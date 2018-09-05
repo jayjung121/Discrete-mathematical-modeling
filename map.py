@@ -94,7 +94,7 @@ class Map:
 # This function takes zipcode as a parameter and return matching population in given zipcode.
 
 def get_pop(zipcode):
-    df = pd.read_csv("C:\\Users\\jbsoo\\Desktop\\JayJung\\UW\\Math 381\\Math381_final_project\\pop_by_zip.csv")
+    df = pd.read_csv("data/pop_by_zip.csv")
     x = df[df["Zip Code ZCTA"] == zipcode]['2010 Census Population']
     mean = np.mean(df['2010 Census Population'])
     # if failed to find zipcode from lat and long
